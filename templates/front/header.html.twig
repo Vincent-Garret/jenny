@@ -1,0 +1,12 @@
+{% extends "base.html.twig" %}
+
+{% block header %}
+    <header class="container-fluid">
+        <ul class="row justify-content-center align-items-center">
+            <li class="col-3"><a href="{{ path('home') }}">ACCUEIL</a></li>
+            <li class="col-3"><a href="{{ path('show') }}">LES SHOWS</a></li>
+            <li class="col-3"><a href="{{ path('gallery') }}">GALLERIE</a></li>
+            <li class="col-3"><a href="{{ path('contact') }}">CONTACT</a></li>
+        </ul>
+    </header>
+{% endblock %}
