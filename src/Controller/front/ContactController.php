@@ -14,7 +14,6 @@ class ContactController extends AbstractController
      */
     public function  contact()
     {
-        var_dump($_GET);
         return $this->render('front/contact.html.twig');
     }
 }
