@@ -1,5 +1,32 @@
 {% extends "base.html.twig" %}
 
 {% block body %}
-    <h1>Jenny Morgan James</h1>
+    <h1 class="showTitle first">Jenny Morgan James</h1>
+    <p class="showIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, distinctio earum eius esse est expedita laboriosam maiores mollitia nihil nisi, non, obcaecati quos rem reprehenderit similique tempora voluptas? Animi, est?</p>
+
+    <div class="section show container-fluid">
+        <div class="row">
+            <div class="text col-6">
+                <h2 class="showTitle"> SHOW n°1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dicta dignissimos, ea exercitationem iure libero modi natus nesciunt nostrum obcaecati officiis quas ullam vel! Aliquid dolore hic repudiandae sapiente totam!</p>
+            </div>
+            <div class="col-6">
+                <img src="{{ asset('img/test4.jpg') }}" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <div class="section show container-fluid">
+        <div class="row">
+            <div class="col-6">
+                <img src="{{ asset('img/test5.jpg') }}" alt="" class="img-fluid">
+            </div>
+            <div class="text col-6">
+                <h2 class="showTitle"> SHOW n°2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dicta dignissimos, ea exercitationem iure libero modi natus nesciunt nostrum obcaecati officiis quas ullam vel! Aliquid dolore hic repudiandae sapiente totam!</p>
+            </div>
+        </div>
+    </div>
+
+
 {% endblock %}
