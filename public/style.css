@@ -5,6 +5,12 @@
     background-size: cover;
 }
 
+.contact{
+    background-image:url("img/test4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .first{
     padding-top: 17vh;
 }
@@ -76,4 +82,8 @@ a:hover{
 .owl-nav .owl-next {
     right: -30px;
     width: 30px;
+}
+
+.insta{
+    width: 100px;
 }

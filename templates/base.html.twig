@@ -12,11 +12,17 @@
             {#{{ encore_entry_link_tags('app') }}#}
         {% endblock %}
     </head>
-    <body {% if url is defined and '/home' in url %} class="home" {% endif %}>
+    <body {% if url is defined and '/home' in url %} class="home" {% endif %}
+            {% if url is defined and '/contact' in url %} class="contact" {% endif %}
+            {% if url is defined and '/gallery' in url %} class="gallery" {% endif %}
+            {% if url is defined and '/show' in url %} class="show" {% endif %}>
         {% block header %}
             {% include "front/header.html.twig" %}
         {% endblock %}
         {% block body %}{% endblock %}
+        {% block footer %}
+            {% include "front/footer.html.twig" %}
+        {% endblock %}
         {% block javascripts %}
             <script
                     src="https://code.jquery.com/jquery-3.6.0.min.js"
